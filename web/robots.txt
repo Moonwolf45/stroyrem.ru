@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /cgi-bin
+Disallow: /admin
+
+Host: https://prret.ru
+
+Sitemap: https://prret.ru/sitemap.xml
