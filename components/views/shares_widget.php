@@ -15,8 +15,8 @@ use yii\helpers\Url;
                 <?php foreach($shares_two_end as $share): ?>
                     <article class="col-4 col-12-mobile special">
                         <a href="<?php echo Url::to(['/shares/view', 'translit' => $share['translit']]); ?>" class="image featured">
-<!--                            --><?php //$image_shares_widget = $share->getImage(); ?>
-<!--                            --><?php //echo Html::img('@web/' . $image_shares_widget->getPath('x305'), ['class' => 'slide_img', 'alt' => $image_shares_widget['urlAlias']]); ?>
+                            <?php $image_shares_widget = $share->getImage(); ?>
+                            <?php echo Html::img('@web/' . $image_shares_widget->getPath('x305'), ['class' => 'slide_img', 'alt' => $image_shares_widget['urlAlias']]); ?>
                         </a>
                         <header>
                             <h3>

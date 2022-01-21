@@ -15,8 +15,8 @@ use yii\helpers\Url;
                 <?php foreach($news_tree_end as $news): ?>
                     <article class="col-4 col-12-mobile special">
                         <a href="<?php echo Url::to(['/news/view', 'translit' => $news['translit']]); ?>" class="image featured">
-<!--                            --><?php //$image_news_widget = $news->getImage(); ?>
-<!--                            --><?php //echo Html::img('@web/' . $image_news_widget->getPath('x305'), ['class' => 'slide_img', 'alt' => $image_news_widget['urlAlias']]); ?>
+                            <?php $image_news_widget = $news->getImage(); ?>
+                            <?php echo Html::img('@web/' . $image_news_widget->getPath('x305'), ['class' => 'slide_img', 'alt' => $image_news_widget['urlAlias']]); ?>
                         </a>
                         <header>
                             <p>Дата: <?php echo Yii::$app->formatter->asDate($news['created_at']); ?></p>
