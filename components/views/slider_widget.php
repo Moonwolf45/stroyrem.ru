@@ -7,8 +7,8 @@ if (!empty($slider)): ?>
     <div class="slider">
         <?php foreach($slider as $slide): ?>
             <div class="item">
-                <?php $image_slide_widget = $slide->getImage(); ?>
-                <?php echo Html::img('@web/' . $image_slide_widget->getPath('x655'), ['class' => 'slide_img', 'alt' => $image_slide_widget['urlAlias']]); ?>
+<!--                --><?php //$image_slide_widget = $slide->getImage(); ?>
+<!--                --><?php //echo Html::img('@web/' . $image_slide_widget->getPath('x655'), ['class' => 'slide_img', 'alt' => $image_slide_widget['urlAlias']]); ?>
                 <?php if ($slide['title'] != '' || $slide['content'] != ''): ?>
                     <div class="caption">
                         <h4><?php echo $slide['title']; ?></h4>

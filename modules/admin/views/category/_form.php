@@ -23,7 +23,6 @@ mihaildev\elfinder\Assets::noConflict($this);
             <option value="0">Самостоятельная категория</option>
             <?php echo MenuWidget::widget(['tpl' => 'select', 'model' => $model]); ?>
         </select>
-
     </div>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]); ?>

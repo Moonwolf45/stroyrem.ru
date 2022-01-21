@@ -26,7 +26,7 @@ class CachedBehavior extends Behavior {
     }
 
     public function deleteCache() {
-        Foreach ($this->cache_id as $id){
+        foreach ($this->cache_id as $id){
             Yii::$app->cache->delete($id);
         }
     }

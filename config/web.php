@@ -19,13 +19,12 @@ $config = [
             'layout' => 'main_admin',
             'defaultRoute' => 'category/index',
         ],
-         'yii2images' => [
+        'yii2images' => [
             'class' => 'rico\yii2images\Module',
             'imagesStorePath' => 'images/original',
             'imagesCachePath' => 'images/cache',
             'graphicsLibrary' => 'GD',
-            'placeHolderPath' => '@webroot/images/placeHolder.png',
-            'imageCompressionQuality' => 95,
+            'placeHolderPath' => '@webroot/images/placeHolder.png'
         ],
     ],
     'components' => [
@@ -39,7 +38,6 @@ $config = [
         ],
         'request' => [
             'cookieValidationKey' => '0BGsg5xHONRFDYbNRFk4IVAr-ZTwOJuC',
-            'baseUrl' => '',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
